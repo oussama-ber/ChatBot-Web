@@ -1,0 +1,56 @@
+.intro-header {
+  height: unset !important;
+}
+.top-nav-collapse {
+  background-color: #78909c !important;
+}
+.view {
+  height: 57vh !important;
+}
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #78909c !important;
+  }
+}
+h1 {
+  letter-spacing: 5px;
+  font-size: 35px;
+}
+h5 {
+  letter-spacing: 3px;
+  font-size: 10px;
+
+}
+.hr-light {
+  border-top: 2px solid rgb(241, 141, 47);
+}
+@media (max-width: 700px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+    height: 600px;
+  }
+}
+.hello {
+  background-color: rgba(56, 110, 160, 0.219);
+  background-size: 200%;
+
+}
+
+
+.space {
+  size: 100px;
+}
+
+.button{
+  color: black;
+}
+li{
+  color: rgb(13, 28, 41);
+}
+
+

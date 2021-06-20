@@ -1,0 +1,56 @@
+mat-form-field {
+
+  width: 100%;
+}
+/* mat-card {
+  background-color: #91B3B4;
+ } */
+mat-spinner{
+  margin: auto;
+
+}
+
+img{
+  width: 20%;
+  height: auto;
+  margin-left: 42%;
+
+}
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: 0 2px 1px -1px rgb(2, 24, 94),
+              0 1px 1px 0 rgb(0, 0, 0),
+              0 2px 3px 0 rgb(9, 0, 131);
+}
+mat-card{
+  width: 50%;
+  margin-left: 27%;
+
+  background-color: rgb(249, 252, 255);
+}
+h1 {
+  color: rgb(25, 64, 112);
+  margin-left: 38% ;
+  font-weight: bold;
+
+}
+
+/* .view {
+  height: 100;
+} */
+
+#intro {
+  background: url("https://www.smualumni.org/wp-content/uploads/2018/12/msb-undergraduate-programs.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*-----------------------------*/
+
+.container{
+  width: 70%;
+}
+img{
+  margin-right: 51%;
+}

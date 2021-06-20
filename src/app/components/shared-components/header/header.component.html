@@ -1,0 +1,68 @@
+
+<!--/.Navbar-->
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="false"  >
+  <img src="../assets/images/logo.png">
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" href="#">SMU Career Center</a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link waves-light" routerLink="/home/" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light"  routerLink="/home/chatroom" mdbWavesEffect>Chatroom</a>
+      </li>
+      
+
+      <!-- Dropdown -->
+      <!-- <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" *ngIf="userIsAdmin && userIsAuthenticated" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          events<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/posts/create">Add new event</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/posts/events">See events</a>
+        </div>
+      </li> -->
+      <!-- <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" *ngIf="userIsAdmin && userIsAuthenticated" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Jobs<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/jobs/showJob">Job offers</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/jobs/createJob">Create Job</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/jobs/validJobs">Validated job offers</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/jobs/showCv">Students applications</a>
+
+        </div>
+      </li> -->
+
+    </ul>
+    <!-- Links -->
+
+    <ul class="navbar-nav ml-auto nav-flex-icons" *ngIf="!userIsAuthenticated">
+
+
+      <li class="nav-item">
+        <a class="nav-link">
+          <div class="btn-group" mdbDropdown>
+            <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
+            <div class="dropdown-menu dropdown-menu-right dropdown-primary">
+              <a class="dropdown-item" routerLink="/auth/login">Sign in</a>
+              <a class="dropdown-item" routerLink="/auth/signup">Sign up</a>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <button mat-raised-button class="logout" (click)="onLogout()" *ngIf="userIsAuthenticated" aria-label="logout" >Logout</button>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+<!-- ---------------------------------->
+

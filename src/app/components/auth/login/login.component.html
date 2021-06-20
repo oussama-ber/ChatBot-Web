@@ -1,0 +1,74 @@
+<app-header></app-header>
+
+<!-- ------------------------------------------------------>
+<div class="container my-5 py-5 z-depth-1">
+
+
+  <!--Section: Content-->
+  <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+
+      <!--Grid column-->
+      <div class="col-md-6">
+        <img src="../assets/images/logo.png">
+
+        <!-- Default form login -->
+        <form class="text-center" action="#!">
+
+          <p class="h4 mb-4">Sign in</p>
+          <mat-spinner *ngIf="isLoading"></mat-spinner>
+
+          <form (submit)="onLogin(loginForm)" #loginForm="ngForm" *ngIf="!isLoading">
+
+          <!-- Email -->
+          <mat-form-field>
+          <input  matInput class="form-control mb-2" name="email" ngModel type="email" placeholder="E-Mail" #emailInput="ngModel" required email>
+          <mat-error *ngIf="emailInput.invalid">Please enter a valid email.</mat-error>
+        </mat-form-field>
+          <!-- Password -->
+          <mat-form-field>
+          <input matInput type="password" class="form-control mb-2 " name="password" ngModel matInput placeholder="Password" #passwordInput="ngModel" required>
+          <mat-error *ngIf="passwordInput.invalid">Please enter a valid password.</mat-error>
+        </mat-form-field>
+
+
+          <div class="d-flex justify-content-around">
+
+            <div>
+              <!-- Forgot password -->
+              <a [routerLink]="['/auth/emailresetpassword']">Forgot password?</a>
+            </div>
+          </div>
+
+          <!-- Sign in button -->
+          <button class="btn btn-info btn-block my-4" type="submit" >Sign in</button>
+
+        </form>
+
+          <!-- Register -->
+
+
+          <!-- Social login -->
+
+        </form>
+        <!-- Default form login -->
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+
+  </section>
+  <!--Section: Content-->
+
+
+</div>
+
+
+
+<app-footer></app-footer>
