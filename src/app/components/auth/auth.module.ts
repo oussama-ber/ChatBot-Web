@@ -50,8 +50,8 @@ const routes: Routes =[
 
         // SignupComponent,
         // LoginComponent,
-        // VerifyComponent,
-        // ResetpasswordComponent,
+         VerifyComponent,
+       ResetpasswordComponent,
         // EmailresetpasswordComponent,
         // AfterResetPasswordComponent,
         // ProfileComponent,

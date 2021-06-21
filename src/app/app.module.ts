@@ -16,7 +16,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 //modules 
 import { AngularMaterialModule } from './components/angular-material.module';
-// import { AuthModule } from './components/auth/auth.module';
+ import { AuthModule } from './components/auth/auth.module';
 // import { PostsModule } from './components/posts/posts.module';
 // import { JobsModule } from './components/jobs/jobs.module';
 // import { HomeModule } from './components/home/home.module';
@@ -44,7 +44,7 @@ import { SharedModule } from './components/shared-components/shared.module';
     //jobs 
     // JobsModule,
     //auth
-    // AuthModule,
+  AuthModule,
     //home module fac-presentation, first-page, info.
     // HomeModule,
     //shared module 

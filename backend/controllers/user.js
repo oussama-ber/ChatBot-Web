@@ -1,6 +1,7 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const User = require("../models/user");
+const randomstring = require("randomstring");
 
 const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(

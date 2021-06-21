@@ -25,7 +25,7 @@
     "@angular/router": "~9.1.4",
     "@fortawesome/fontawesome-free": "^5.14.0",
     "@ng-bootstrap/ng-bootstrap": "^6.2.0",
-    "@sendgrid/mail": "^7.2.5",
+    "@sendgrid/mail": "^7.4.5",
     "@types/chart.js": "^2.9.24",
     "angular-bootstrap-md": "^9.4.0",
     "animate.css": "^4.1.0",
@@ -42,7 +42,7 @@
     "ng": "0.0.0",
     "ng2-search-filter": "^0.5.1",
     "nodemon": "^2.0.4",
-    "randomstring": "^1.1.5",
+    "randomstring": "^1.2.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
