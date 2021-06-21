@@ -10,6 +10,7 @@ export class ChatroomComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
