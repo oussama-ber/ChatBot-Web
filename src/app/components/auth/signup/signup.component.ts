@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
 import { Subscription } from 'rxjs';
 import { mimeType } from '../signup/mime-type.validator';
+import { domain } from 'process';
 
 @Component({
   templateUrl: './signup.component.html',
@@ -73,7 +74,12 @@ export class SignupComponent implements OnInit, OnDestroy {
 
     // console.log("onSignUp file  : " + this.form.value.image);
     // console.log("onSignUp file name : " + this.form.value.image.name);
-
+    const domain = form.value.email.slice(form.value.email.indexOf('@'));
+    if (domain !== "@medtech.tn" || domain !== "@msb.tn" || domain !== "@smu.tn" ){
+      alert("The email must be from SMU!");
+      return; 
+    }
+    
     this.authService.createUser(form.value.name, form.value.email, form.value.password, 'student',   this.form.value.image);
     this.router.navigate['/login'];
   }
